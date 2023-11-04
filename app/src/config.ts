@@ -10,192 +10,213 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_hello.tgs'),
+            src: import('./assets/stickers/party.tgs'),
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Welcome to Telegram Onboarding Kit',
+          title: "<b>Arab Tilini</b> to'g'ri, samarali va davomiy o'rganing",
           description:
-            "Create stunning onboarding and paywall for your Telegram Bot using the full power of Mini Apps<br><br>It's <b>simple</b>, <b>fast</b>, highly <b>customizable</b> and <a href='https://github.com/Easterok/telegram-onboarding-kit' target='_blank'>open-source</a>!",
-          button: 'Next',
+            "🎉 Tabriklayman siz ustoz Salohiddin Qurbonov tomonidan o’tkaziladigan bepul darsga muvaffaqiyatli ro’yxatdan o’tdingiz!",
+          button: 'Keyingisi',
         },
 
         // image
         {
           media: {
             type: 'image',
-            src: import('./assets/img/durov.webp'),
+            src: import('./assets/img/teacher.webp'),
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'Onboarding supports many types of content',
+          title: "Keling undan avval o’zimni tanishtirsam 💁🏻‍♂️  ",
           description:
-            "Here you can see <b>Image</b>. But it's just the beginning...",
-          button: 'Next',
+            "Men Salohiddin Qurbonov Arab tilidan C1 natijaga ega Xalqaro toifadagi 11 yillik ustozman ",
+          button: 'Keyingisi',
         },
+
+        // // image 2
+        // {
+        //   media: {
+        //     type: 'rounded',
+        //     src: import('.assets/img/sharqshunoslik.webp'),
+        //   },
+        //   shape: 'rounded',
+        //   pagination: 'count',
+        //   title: 'Ilmiy faoliyatim va karyeram',
+        //   description:
+        //     'Hozirgi kunda doktarantura tadqiqotchisi hamda "Sharqshunoslik universiteti" Arab tili filalogiya talabalariga grammatikadan saboq berib kelaman',
+        //   button: 'Keyingisi',
+        // },
 
         // sticker
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_love.tgs'),
+            src: import('./assets/stickers/book.tgs'),
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Telegram stickers',
+          title: 'Tarjimonlik faoliyatim',
           description:
-            'Just download any <b>.tgs</b> sticker from Telegram and use it in your onboardings',
-          button: 'Next',
+            '20 ga yaqin kitoblar tarjimoni hamda tarjima muharriri hisoblanaman',
+          button: 'Keyingisi',
         },
+
 
         // form
         {
           extends: 'form', // note, it's important to extend from 'form' here
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_spy.tgs'),
-            size: 150,
+            src: import('./assets/stickers/hello.tgs'),
+            size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Forms',
-          description: 'User fills in the form – the bot receives the data',
+          title: 'Keling endi siz blan tanishamiz',
+          description: 'Siz necha yoshdasiz?',
           form: [
             {
-              id: 'text_from_form',
-              placeholder: 'Text input',
-              type: 'text',
+              id: '14-18',
+              placeholder: '14-18',
+              type: 'checkbox',
             },
             {
-              id: 'number_from_form',
-              placeholder: 'Number input',
-              type: 'number',
+              id: '18-24',
+              placeholder: '18-24',
+              type: 'checkbox',
             },
             {
-              id: 'checkbox_from_form',
-              placeholder: 'Checkbox',
+              id: '24-30',
+              placeholder: '24-30',
+              type: 'checkbox',
+            },
+            {
+              id: '30-yuqori',
+              placeholder: '30-yuqori',
               type: 'checkbox',
             },
           ],
-          button: 'Next',
+          button: 'Keyingisi',
         },
 
-        // video
+        // form 2
         {
-          media: {
-            type: 'video',
-            src: import('./assets/videos/spongebob.mp4'),
-            poster: import('./assets/img/spongebob_poster.webp'),
-            style: 'aspect-ratio: 400/287', // here we manually set video aspect-ratio (default is 16:9)
-          },
-          shape: 'rounded',
-          pagination: 'count',
-          title: 'Videos',
-          description:
-            "Typically, video starts <b>automatically</b><br><br>However, on iOS, it will only autoplay upon any prior tap on the page ('Next' button doesn't count). If video doesn't autoplay, user will see preview and pretty animation, inviting them to tap to play the video",
-          button: 'Next',
-        },
-
-        // list
-        {
+          extends: 'form',
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_juggling.tgs'),
-            size: 150,
+            src: import('./assets/stickers/hello.tgs'),
+            size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Lists',
-          description:
-            'Lists can be used to showcase <b>features</b> of your product. Items support customizable icons',
+          title: 'Keling endi siz blan tanishamiz',
+          description: 'Arab tiliga qiziqasizmi?',
+          form: [
+            {
+              id: 'juda',
+              placeholder: 'Juda ham qiziqaman',
+              type: 'checkbox',
+            },
+            {
+              id: 'niyat',
+              placeholder: "O'rganish niyatidaman",
+              type: 'checkbox',
+            },
+            {
+              id: 'keyinroq',
+              placeholder: "Keyinroq o'rganaman",
+              type: 'checkbox',
+            },
+          ],
+          button: 'Keyingisi',
+        },
+
+        // form 3
+        {
+          extends: 'form', 
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/hello.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Keling endi siz blan tanishamiz',
+          description: "Sizning arab tilini bilish darajangiz qanday? 🤔",
+          form: [
+            {
+              id: '1',
+              placeholder: "Endi o'rganishni boshlayman",
+              type: 'checkbox',
+            },
+            {
+              id: '2',
+              placeholder: "Faqat arab harflarini bilaman",
+              type: 'checkbox',
+            },
+            {
+              id: '3',
+              placeholder: 'A1 darajadaman',
+              type: 'checkbox',
+            },
+            {
+              id: '4',
+              placeholder: "A2 darajadaman",
+              type: 'checkbox',
+            },
+          ],
+          button: 'Keyingisi',
+        },
+
+        // form 4
+        {
+          extends: 'form', 
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/hello.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Keling endi siz blan tanishamiz',
+          description: "Ayni damda qayerda yashaysiz? Izohlarda yozib qoldiring 👇",
+          form: [
+            {
+              id: 'location',
+              placeholder: "Masalan, Namangan",
+              type: 'text',
+            },
+          ],
+          button: 'Keyingisi',
+        },
+        
+        // go to paywall slide
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/hello.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          textAlign: 'center',
+          title: 'Bizning onlain kursimizda ishtiroq etmoqchimisiz?',
+          description: "Unda hoziroq 100 000 so'm dastlabki to'lovni amalga ohiring va o'z joyingizni band qiling. Shoshiling, joylar soni cheklangan",
           list: [
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/guide.svg'),
-                size: 30,
-              },
-              text: 'Some cool feature',
-            },
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/track.svg'),
-                size: 30,
-              },
-              text: 'Some very cool feature',
-            },
             {
               media: {
                 type: 'icon',
                 src: import('./assets/icons/time.svg'),
                 size: 30,
               },
-              text: 'Some extremely cool feature',
+              text: 'Qolgan joylar soni: <b>67</b>',
             },
           ],
-          button: 'Next',
-        },
-
-        // "everything is customizable" slide
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_xray.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Everything is customizable',
-          description: '',
-          textAlign: 'center',
-          list: [
-            '<b>CSS styles</b>: extend primary colors from Telegram or set yours',
-            'Button text and actions (look down)',
-            'Use our carefully crafted <b>presets</b> or easily create your own',
-          ],
-          button: 'Super-Duper Next',
-        },
-
-        // slide with other features
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_cool.tgs'),
-            size: 150,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Some other features:',
-          description: '',
-          list: [
-            'One-click 0$ <b>deploy</b> on GitHub Pages',
-            'Language and currency localization',
-            'Buttons with <b>haptic</b> feedback',
-            'Content pre-loading for high speed',
-            '<b>Low-code</b> approach to building onboardings',
-            'Many examples/presets',
-            "And many more... (see <a href='https://github.com/Easterok/telegram-onboarding-kit' target='_blank'>GitHub</a>)",
-          ],
-          button: 'Next',
-        },
-
-        // go to paywall slide
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_knife.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          textAlign: 'center',
-          title: 'But onboarding slides are not enough...',
-          description: "Let's go to Paywall",
           button: {
-            content: 'Go to Paywall',
+            content: "To'lov qilish",
             to: '/paywall',
           },
         },
@@ -208,40 +229,40 @@ export default defineConfig({
       path: '/paywall',
       media: {
         type: 'sticker',
-        src: import('./assets/stickers/duck_money.tgs'),
+        src: import('./assets/stickers/hello.tgs'),
         size: 150,
       },
       shape: 'square',
-      title: 'Your beautiful Paywall',
+      title: 'Bizning tariflar',
       list: [
-        'Adjustable product cards',
-        '<b>👛 Wallet Pay</b> and <b>Telegram Payments</b> ready. Add custom methods easily',
-        'Subscriptions or One-time payments',
+        "Qulay narxlar",
+        "<b>Click</b> yoki <b>Payme</b> orqali to'lash imkoni",
+        "O'zingizga mos tariflarni tanlsh imkoni",
       ],
       products: [
         {
-          id: '1_month_subscription',
-          title: '1 month subscription',
-          description: '2$/month',
+          id: 'sdandart',
+          title: "Standart",
+          description: "200 000 so'm",
           discount: '',
-          price: 2,
+          price: 200000,
         },
         {
-          id: '1_year_subscription',
-          title: '1 year subscription',
-          description: '1$/month',
-          discount: 'Discount 50%',
-          price: 12,
+          id: 'basic',
+          title: 'Basic',
+          description: "300 000 so'm",
+          discount: 'Chegirma 20%',
+          price: 300000,
         },
         {
-          id: 'lifetime_access',
-          title: 'Lifetime access',
-          description: '20$ once',
-          discount: 'Best offer',
-          price: 20,
+          id: 'premium',
+          title: 'Premium',
+          description: "500 000 so'm",
+          discount: 'Eng yaxshi tanlov',
+          price: 500000,
         },
       ],
-      mainButtonText: 'Buy for {price}',
+      mainButtonText: "Sotib olish: {price} so'm",
       popup: {
         // popup for payment methods choice
         type: 'web',
@@ -259,3 +280,5 @@ export default defineConfig({
     },
   ],
 });
+
+
