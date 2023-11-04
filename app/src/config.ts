@@ -35,19 +35,19 @@ export default defineConfig({
           button: 'Keyingisi',
         },
 
-        // // image 2
-        // {
-        //   media: {
-        //     type: 'rounded',
-        //     src: import('.assets/img/sharqshunoslik.webp'),
-        //   },
-        //   shape: 'rounded',
-        //   pagination: 'count',
-        //   title: 'Ilmiy faoliyatim va karyeram',
-        //   description:
-        //     'Hozirgi kunda doktarantura tadqiqotchisi hamda "Sharqshunoslik universiteti" Arab tili filalogiya talabalariga grammatikadan saboq berib kelaman',
-        //   button: 'Keyingisi',
-        // },
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/hello.tgs'),
+            size: 250,
+          },
+          shape: 'rounded',
+          pagination: 'count',
+          title: "Ilmiy faoliyatim va karyeram",
+          description:
+            "Hozirgi kunda doktarantura tadqiqotchisi hamda 'Sharqshunoslik universiteti' Arab tili filalogiya talabalariga grammatikadan saboq berib kelaman",
+          button: 'Keyingisi',
+        },
 
         // sticker
         {
